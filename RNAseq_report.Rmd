@@ -103,7 +103,7 @@ rownames(normalised.table.dds) <- gsub('\\..+$', '', rownames(normalised.table.d
                                                                                                      ##                ##
                                                                                                      ####################
 
-dr="/Users/sanamjeet/Desktop/work_hpi/hpi_projects/RNAseq/s_albertini/ctrl_vs_100dpi/"
+dr="..."
 write.table(normalised.table.dds, file = paste0(dr,"normalizedCounts.table"), sep = "\t")
 #write.xlsx2(normalised.table.dds, file = paste0(dr,"normalizedCounts.xlsx"))
 
@@ -291,7 +291,7 @@ datatable(DT_sig_genes_names,extensions = 'Buttons', filter = 'top', options = l
                                                                                                 ##              ##
                                                                                                 ##################
 
-dr="/Users/sanamjeet/Desktop/work_hpi/hpi_projects/RNAseq/s_albertini/ctrl_vs_100dpi/"
+dr="..."
 
 BaseMeanTotal <- as.matrix(DESeq2Res[, "baseMean", drop = FALSE])
 signames <- match(sig_genes_names$ensembl_id, rownames(BaseMeanTotal))
