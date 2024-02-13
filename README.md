@@ -8,14 +8,16 @@ After quantificaton:
 
 
 1. Change directory to local directory:
-
+```
 counts_files <- paste0(getwd(),"/",list.dirs(recursive = FALSE,full.names = FALSE),”/quant.sf”)
+```
 
-2. Sort them and separate control and treated:
-
+3. Sort them and separate control and treated:
+```
  ct <- counts_files[c()] 
  sm <- counts_files[c()]
-
+```
 3. Run script for differential expression:
-
+```
 rmarkdown::render("PATH-to-the-rmd-script",output_dir = "Dir_of_counts")
+```
