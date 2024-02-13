@@ -3,6 +3,7 @@ R markdown document to creat html reports for RNA-sequecing.
 Following are the steps to use the R markdown script.
 
 The script used salmon quantification using gencode transcripts (download from here: https://www.gencodegenes.org/). 
+Download salmon: https://salmon.readthedocs.io/en/latest/
 
 After quantificaton:
 
