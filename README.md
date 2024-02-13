@@ -1,4 +1,4 @@
-# RNA-seq-Report-HTML-
+# RNA-seq-Report
 R markdown document to creat html reports for RNA-sequecing. 
 Following are the steps to use the R markdown script.
 
