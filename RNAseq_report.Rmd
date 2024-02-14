@@ -149,24 +149,6 @@ dds <- estimateDispersions(dds)
 
 dds<-  nbinomWaldTest(dds)
 DESeq2Res <- results(dds, pAdjustMethod = "BH")
-table(DESeq2Res$padj < 0.1)
-#table(DESeq2Res$padj < 0.05)
-#QC DE
-#hist(DESeq2Res$pvalue, col = "lavender", main = "WT vs Deletion", xlab = "p-values")
-
-DESeq2Res <- DESeq2Res[ !is.na(DESeq2Res$padj), ]
-
-DESeq2Res <- DESeq2Res[ !is.na(DESeq2Res$pvalue), ]
-
-DESeq2Res <- DESeq2Res[, -which(names(DESeq2Res) == "padj")]
-suppressMessages(FDR.DESeq2Res <- fdrtool(DESeq2Res$stat, statistic= "normal", plot = FALSE))
-#FDR.DESeq2Res$param[1, "sd"]
-DESeq2Res[,"padj"]  <- p.adjust(FDR.DESeq2Res$pval, method = "BH")
-table(DESeq2Res$padj < 0.1)
-#QC
-#hist(FDR.DESeq2Res$pval, col = "royalblue4", main = "CT vs TR, correct null model", xlab = "CORRECTED p-values")
-
-#table(DESeq2Res[,"padj"] < 0.1)
 
 rownames(DESeq2Res) <- gsub('\\..+$', '', rownames(DESeq2Res))
 gene_ensembl_id<-data.frame(Ensembl_id=rownames(DESeq2Res))
