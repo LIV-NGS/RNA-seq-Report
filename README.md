@@ -10,7 +10,7 @@ After quantificaton:
 
 1. Change directory to local directory:
 ```
-counts_files <- paste0(getwd(),"/",list.dirs(recursive = FALSE,full.names = FALSE),”/quant.sf”)
+counts_files <- paste0(getwd(),"/",list.dirs(recursive = FALSE,full.names = FALSE),"/quant.sf")
 ```
 
 3. Sort them and separate control and treated:
