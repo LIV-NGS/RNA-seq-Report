@@ -20,5 +20,5 @@ counts_files <- paste0(getwd(),"/",list.dirs(recursive = FALSE,full.names = FALS
 ```
 3. Run script for differential expression:
 ```
-rmarkdown::render("PATH-to-the-rmd-script",output_dir = "Dir_of_counts")
+rmarkdown::render("PATH-to-the-rmd-script",output_dir = "full_path_to_output_dir")
 ```
