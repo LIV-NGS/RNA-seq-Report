@@ -49,10 +49,9 @@ MM<-"mmusculus_gene_ensembl"
 DM<-"dmelanogaster_gene_ensembl"
 MA <-"mauratus_gene_ensembl"
 
-#/mnt/HPI1/Ref/M_auratus/Mesocricetus_auratus.MesAur1.0.101.gtf
-#/mnt/HPI1/Ref/h_sapiens/gencode.v33.annotation.gtf
+##gencode.v33.annotation.gtf
 #ensembl = useMart(biomart="ensembl", dataset=MA, host="uswest.ensembl.org")
-txdb <- makeTxDbFromGFF("/Volumes/data_external_1tb/Ref/h_sapiens/gencode.v43.annotation.gtf",
+txdb <- makeTxDbFromGFF("PATH_to_gencode_gtf",
                  format=c("auto", "gff3", "gtf"))
 
 k <- keys(txdb, keytype = "TXNAME")
