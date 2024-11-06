@@ -18,7 +18,7 @@ counts_files <- paste0(getwd(),"/",list.dirs(recursive = FALSE,full.names = FALS
  ct <- counts_files[c()] 
  sm <- counts_files[c()]
 ```
-3. Run script for differential expression:
+3. Change path of directory at line 105 and 275 to full path of output report directory (C1,C2 etc. make them first if not existing) and run script for differential expression:
 ```
 rmarkdown::render("PATH-to-the-rmd-script",output_dir = "full_path_to_output_dir")
 ```
