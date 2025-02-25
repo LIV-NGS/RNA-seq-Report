@@ -1,6 +1,7 @@
 # RNA-seq-Report
 
-Python script for salmon quantification. Install following:
+Python script for salmon quantification. 
+Install or copy following:
 docopt: https://github.com/docopt/docopt
 salmon: https://salmon.readthedocs.io/en/latest/building.html#installation
 Gencode-gtf: https://www.gencodegenes.org/
