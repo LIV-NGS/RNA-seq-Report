@@ -8,6 +8,7 @@ Gencode-gtf: https://www.gencodegenes.org/
 Usage:
 
 rna-seq.py quant-pe /home/user/salmon_index  -t 10
+
 rna-seq.py -h
 
 ________________________________________________________
