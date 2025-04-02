@@ -23,10 +23,10 @@ rna-seq.py -h
 ________________________________________________________
 
 
-R markdown document to creat html reports for RNA-seq differential gene expression. 
+R markdown document to create html reports for RNA-seq differential gene expression. 
 Following are the steps to use the R markdown script.
 
-The script used salmon quantification using gencode transcripts (download from here: https://www.gencodegenes.org/). 
+The script uses salmon quantification using gencode transcripts (download from here: https://www.gencodegenes.org/). 
 Download salmon: https://salmon.readthedocs.io/en/latest/
 
 After quantificaton:
